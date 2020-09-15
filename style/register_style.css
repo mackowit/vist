@@ -1,0 +1,99 @@
+.form-box {
+    background-color: white;
+    width: 30vw;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    font-family: arial;
+    color: cornflowerblue;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+    color: blueviolet;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+    position: relative;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: cornflowerblue;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+    margin-top: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+img {
+    display: block;
+    width: 30%;
+    margin: 30px auto;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.email_field_state-icon {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: .5rem;
+    top: .25rem;
+    background-repeat: no-repeat;
+    border: 2px solid red;
+}
+
+.email_field:valid~.email_field_state-icon {
+    background-image: url(/images/mark-correct-tick-success-check-yes-circle-icon.png);
+}
+
+.email_field:invalid~.email_field_state-icon {
+    background-image: url(/images/incorrect-delete-circle-x-cross-invalid-close-icon.png);
+}
